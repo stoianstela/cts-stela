@@ -11,13 +11,14 @@ public class CalendarUtil {
 		else if (day==3)
 			return "Tuesday";
 		else if (day==4)
-			return "Wensday";
+			return "Wednesday";
 		else if (day==5)
-			return "Sunday";
+			return "Thursday";
 		else if (day==6)
-			return "Sunday";
+			return "Friday";
 		else if (day==7)
-			return "Sunday";
+			return "Saturday";
+		return null;
 	}
 
 }
