@@ -1,8 +1,8 @@
-package ro.ase.csie.stud.semina2.solid;
+package ro.ase.csie.stud.seminar3;
 
 import java.util.Date;
 
-public class Persoana {
+public class Person {
 	
 private String name;
 	
@@ -12,7 +12,7 @@ private String name;
 	
 	private long salary;
 	
-	public Persoana(String name) {
+	public Person(String name) {
 		this.name = name;
 	}
 

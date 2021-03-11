@@ -1,7 +1,7 @@
 package ro.ase.csie.stud.seminar2;
 
-import ro.ase.csie.stud.semina2.solid.BankAccount;
-import ro.ase.csie.stud.semina2.solid.Persoana;
+import ro.ase.csie.stud.seminar2.solid.BankAccount;
+import ro.ase.csie.stud.seminar2.solid.Persoana;
 
 public class Main {
 	
@@ -36,8 +36,14 @@ public class Main {
 
 		
 		account.deposit(100);
+		try {
 		account.withdraw(50);
 		account.withdraw(70);
+		}
+		catch (InsuficientFunds.Exception e)
+		{
+			
+		}
 		
 		System.out.println(account.getBalance());
 		 
