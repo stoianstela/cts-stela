@@ -34,6 +34,59 @@ public class SuperErou {
 		this.superSuperPutere = superSuperPutere;
 	}
 	
-	
+	public static class SuperErouBuilder
+	{
+		SuperErou supererou;
+		
+		public SuperErouBuilder(String nume, int puncteViata)
+		{
+			
+			this.supererou=new SuperErou();
+			this.supererou.nume=nume;
+			this.supererou.puncteViata=puncteViata;
+		}
+		
+		public SuperErouBuilder esteNegativ()
+		{
+			this.supererou.esteNegativ=true;
+			return this;
+		}
+		
+		public SuperErouBuilder esteRanit()
+		{
+			this.supererou.esteRanitGrav=true;
+			return this;
+		}
+		
+		public SuperErouBuilder setArmaStanga(InterfataArma arma)
+		{
+			this.supererou.armaStanga=arma;
+			return this;
+		}
+		
+		public SuperErouBuilder setArmaDreapta(InterfataArma arma)
+		{
+			this.supererou.armaDreapta=arma;
+			return this;
+		}
+		
+		public SuperErouBuilder setSuperPutere(InterfataSuperPutere superPutere)
+		{
+			this.supererou.superPutere=superPutere;
+			return this;
+		}
+		
+		public SuperErouBuilder setSuperSuperPutere(InterfataSuperPutere superSuperPutere)
+		{
+			this.supererou.superSuperPutere=superSuperPutere;
+			return this;
+		}
+		
+		public SuperErou build()
+		{
+			return this.supererou;
+		}
+		
+	}
 
 }
