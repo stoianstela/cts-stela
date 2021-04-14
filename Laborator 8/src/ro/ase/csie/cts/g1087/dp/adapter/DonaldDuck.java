@@ -44,6 +44,14 @@ public class DonaldDuck implements ActiuniiDisney{
 		
 	}
 
+	@Override
+	public String getNume() {
+		
+		return denumire;
+	}
+
+	
+	
 	
 	
 }
