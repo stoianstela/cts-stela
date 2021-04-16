@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.g1087;
+package ro.ase.csie.cts.g1087.composite;
 
 import java.util.ArrayList;
 
