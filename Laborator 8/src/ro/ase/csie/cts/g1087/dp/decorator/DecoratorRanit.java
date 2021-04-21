@@ -13,7 +13,7 @@ public class DecoratorRanit extends DecoratorCaracter{
 	public void seDeplaseaza() {
 		if(this.caracter.getPuncteViata()<100)
 		{
-			System.out.println("Nu se mai poate deplasa. Este ranit critic.")
+			System.out.println("Nu se mai poate deplasa. Este ranit critic.");
 		}
 		else
 		this.caracter.seDeplaseaza();
